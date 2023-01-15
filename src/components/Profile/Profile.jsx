@@ -1,4 +1,4 @@
-import css from "./profile.modul.css"
+// import css from "./profile.modul.css"
 
 // import user from "../../Data/user.json"
 
