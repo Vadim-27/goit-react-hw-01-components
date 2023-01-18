@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types'; 
 import css from "./list-item.module.css"
 const ListItem = ({avatar, name, isOnline}) => {
     const statusOnline = isOnline ? `${css.label} ${css.green}` : css.label;
@@ -15,3 +15,12 @@ const ListItem = ({avatar, name, isOnline}) => {
     </li>)
 }
 export default ListItem;
+
+ListItem.propTypes = {
+    items: PropTypes.arrayOf(PropTypes.exact({
+    avatar: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    isOnline: PropTypes.bool.isRequired,
+   }))
+    
+}
