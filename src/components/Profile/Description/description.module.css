@@ -1,0 +1,30 @@
+.description{
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffff;
+    border: rgb(225, 200, 99) solid 2px;
+    border-radius: 5px;
+}
+.avatar{
+    margin-bottom: 40px;
+    width: 140px;
+    border-radius: 50%;
+}
+.name{
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    
+    color: #000000;
+}
+.tag{
+    margin-bottom: 10px;
+
+}

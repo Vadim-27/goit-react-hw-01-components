@@ -1,0 +1,24 @@
+.stats{
+   width: 186.5px;
+    display: flex;
+    justify-content: space-between;
+    /* gap: 10px; */
+    padding: 20px;
+    background-color: rgb(174, 194, 195);
+    border: rgb(225, 200, 99) solid 2px;
+    border-radius: 5px;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.label{
+    margin-bottom: 10px;
+}
+.quantity{
+    font-size: 15px;
+    font-weight: 500;
+    
+    color: #000000;
+}
