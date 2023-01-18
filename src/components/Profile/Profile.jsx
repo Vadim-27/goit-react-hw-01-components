@@ -1,10 +1,10 @@
 import css from "./profile.module.css"
 
-import user from "../../Data/user.json"
+import user from "../../data/user.json"
 import Description from "./Description/Description";
 import Stats from "./Stats/Stats";
 
-const Profil = () => {
+const Profile = () => {
     return (
         <div className={css.profile}>
  
@@ -21,4 +21,4 @@ const Profil = () => {
     )
 }
 
-export default Profil;
+export default Profile;

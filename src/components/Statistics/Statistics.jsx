@@ -3,7 +3,7 @@ import css from "./statistics.module.css";
 import { getRandomHexColor } from 'utilits/renderColor';
 
 const Statistics = ({ title, items }) => {
-    // const elements = items.map(item => <li key={item.id}  className={css.item}>
+    
        const elements = items.map(({id, label, percentage}) => <li key={id} style={{ backgroundColor: getRandomHexColor() }}  className={css.item}> 
       <span className="label">{label}</span>
         <span className={css.percentage}>{percentage}</span>

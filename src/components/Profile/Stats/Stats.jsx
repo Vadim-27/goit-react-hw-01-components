@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import css from "./stats.module.css"
 
 const Stats = ({followers, views, likes}) => {
@@ -20,8 +20,9 @@ const Stats = ({followers, views, likes}) => {
     )
 }
 export default Stats;
-// Stats.PropTypes={
-//         followers: PropTypes.number.isRequired,
-//         views: PropTypes.number.isRequired,
-//         likes: PropTypes.number.isRequired
-//     }
+
+Stats.propTypes = {
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired
+}

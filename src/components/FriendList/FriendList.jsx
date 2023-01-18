@@ -1,31 +1,26 @@
 import PropTypes from 'prop-types';
 import ListItem from './ListItem/ListItem';
-import css from "./freriend-list.module.css"
+import css from './freriend-list.module.css';
 
-const FriendsCard = ({ items}) => {
-    // const statusOnline = isOnline ? `${css.label} ${css.red}` : css.label;
+const FriendsCard = ({ items }) => {
+  const elemets = items.map(item => <ListItem key={item.id} {...item} />);
 
-    const elemets = items.map(item => <ListItem key={item.id} {...item} />
-        )
-
-    return (
-        <ul className={css.friendlist}>
-  {elemets}
-</ul>
-    )
-}
+  return <ul className={css.friendlist}>{elemets}</ul>;
+};
 
 export default FriendsCard;
 
 FriendsCard.defautProps = {
-    friends: []
-}
+  friends: [],
+};
 
 FriendsCard.propTypes = {
-    items: PropTypes.arrayOf(PropTypes.exact({
-    avatar: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    isOnline: PropTypes.bool.isRequired,
-    id: PropTypes.number.isRequired}))
-    
-}
+  items: PropTypes.arrayOf(
+    PropTypes.exact({
+      avatar: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      isOnline: PropTypes.bool.isRequired,
+      id: PropTypes.number.isRequired,
+    })
+  ),
+};

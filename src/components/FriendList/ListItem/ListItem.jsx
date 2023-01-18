@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import css from "./list-item.module.css"
 const ListItem = ({avatar, name, isOnline}) => {
     const statusOnline = isOnline ? `${css.label} ${css.green}` : css.label;
-        console.log(statusOnline);
+        
        return (<li className={css.list} >
         <span className={statusOnline}></span>
         <img
