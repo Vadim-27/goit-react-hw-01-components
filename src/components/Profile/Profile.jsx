@@ -1,6 +1,6 @@
 import css from "./profile.module.css"
 
-import user from "../../data/user.json"
+import user from "../../Data/user.json"
 import Description from "./Description/Description";
 import Stats from "./Stats/Stats";
 
